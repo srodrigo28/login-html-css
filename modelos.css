@@ -1,0 +1,13 @@
+:root{
+    --shadow-input: 1px 1px 6px #0000001c;
+}
+
+/** Modelo Stylo Outline*/
+.input-box input:focus-visible{
+    outline: 1px solid #6c63ff;
+}   
+
+/** Pseudo elemento placeholder*/
+.input-box input::placeholder{
+    outline: 1px solid #6c63ff;
+}   

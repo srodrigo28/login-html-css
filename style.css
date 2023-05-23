@@ -1,0 +1,80 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+:root{
+    --roxo1--: #6c63ff;
+    --roxo2--: #6b63fff1;
+    --shadow-input: 1px 1px 6px #0000001c;
+    --shadow-container: 5px 5px 10px rgba(0,0,0, .212);
+    --background-1: #0c0ce94d;
+    --background-2: #fde3a7d7;
+    --background-3: #ffffff;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background-1);
+}
+.container{
+    width: 80%;
+    height: 80vh;
+    display: flex;
+    box-shadow: var(--shadow-container);
+}
+.form-img{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background-2);
+    padding: 1rem;
+}
+.form-image img{
+    width: 31rem;
+}
+.form{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--background-3)
+}
+.form-header{
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: space-between;
+}
+.login-button button{
+    border: none;
+    background-color: var(--roxo1--);
+    padding: .4rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.login-button button:hover{
+    background-color: var(--roxo2--);
+}
+.login-button button a{
+    text-decoration: none;
+    font-weight: 500;
+    color: var(--background-3)
+}
+.form-header h1::after{
+    content: '';
+    display: block;
+    width: 5rem;
+    height: 0.3rem;
+    background-color: var(--roxo1--);
+    margin: auto;
+    position: absolute;
+    border-radius: 10px;
+}
+/** Comensando estilizar form 12:52 / 21:49 */
+
