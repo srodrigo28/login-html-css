@@ -3,15 +3,15 @@
     margin: 0;
     box-sizing: border-box;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    transition: 3s;
 }
 :root{
-    --roxo1--: #6c63ff;
-    --roxo2--: #6b63fff1;
-    --shadow-input: 1px 1px 6px #0000001c;
-    --shadow-container: 5px 5px 10px rgba(0,0,0, .212);
+    --roxo--: #6c63ff;
     --background-1: #0c0ce94d;
     --background-2: #fde3a7d7;
     --background-3: #ffffff;
+    --shadow-input: 1px 1px 6px #0000001c;
+    --shadow-container: 5px 5px 10px rgba(0,0,0, .212);
 }
 body{
     width: 100%;
@@ -26,20 +26,24 @@ body{
     height: 80vh;
     display: flex;
     box-shadow: var(--shadow-container);
+    border: 7px solid #fff; /** #cac8f5 */
+    border-radius: 20px 0 0 20px;
 }
 .form-img{
     width: 50%;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--background-2);
     padding: 1rem;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--background-2);
 }
 .form-image img{
-    width: 31rem;
+    width: 34em;
+    padding: 25px;
+    margin-top: 250px;
 }
 .form{
-    width: 50%;
+    width: 55%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -47,19 +51,21 @@ body{
     background-color: var(--background-3)
 }
 .form-header{
-    margin-bottom: 3rem;
     display: flex;
+    padding: 20px;
+    margin-bottom: 3rem;
     justify-content: space-between;
 }
 .login-button button{
     border: none;
-    background-color: var(--roxo1--);
+    background-color: var(--roxo--);
     padding: .4rem 1rem;
     border-radius: 5px;
     cursor: pointer;
 }
 .login-button button:hover{
-    background-color: var(--roxo2--);
+    opacity: .7;
+    color: black;
 }
 .login-button button a{
     text-decoration: none;
@@ -71,10 +77,94 @@ body{
     display: block;
     width: 5rem;
     height: 0.3rem;
-    background-color: var(--roxo1--);
+    background-color: var(--roxo--);
     margin: auto;
     position: absolute;
     border-radius: 10px;
 }
 /** Comensando estilizar form 12:52 / 21:49 */
-
+.input-group{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+.input-box{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.7rem;
+}
+.input-box label{
+    margin-left: -18px;
+    margin-bottom: 3px;
+}
+.input-box input{
+    width: 14em;
+    border: none;
+    font-size: 1em;
+    padding: 1em 1.1em;
+    border-radius: 10px;
+    box-shadow: var(--shadow-input);
+}
+.input-box input:hover{
+    background-color: #a8a5f3;
+    border: 2px solid #fff;
+    color: #fff;
+    outline: none;
+}
+.input-box input:focus-visible{
+    background-color: #a8a5f3;
+    border: 2px solid #fff;
+    color: #fff;
+    outline: none;
+}
+.input-box label,
+.gender-title h6{
+    padding-left: 20px;
+    font-size: 1em;
+    font-weight: 600;
+    color: #000;
+}
+.gender-group{
+    display: flex;
+    justify-content: space-between;
+    margin-top: .6em;
+    padding: .5em;
+}
+.gender-input{
+    padding: .3em;
+    display: flex;
+    align-items: center;
+}
+.gender-input label{
+    margin-left: .2em;
+    font-size: .9em;
+    font-weight: bold;
+}
+.continue-button{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.continue-button button{
+    width: 80%;
+    margin-top: 2em;
+    border: none;
+    background-color: var(--roxo--);
+    padding: .7em;
+    border: 5px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+.continue-button button:hover{
+    opacity: .7;
+}
+a{
+    text-decoration: none;
+    list-style: none;
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: bold;
+}
