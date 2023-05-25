@@ -1,7 +1,7 @@
 /** Midia mobile 1  600px*/
 @media screen and (max-width: 600px) {
     body{
-        background-color: red;
+        
     }
     .form-image{
         display: none;
@@ -22,7 +22,7 @@
 /** Midia mobile 2 768px*/
 @media screen and (max-width: 768px) {
     body{
-        background-color: red;
+        
     }
     .form-image{
         display: none;
@@ -43,7 +43,7 @@
 /** Midia mobile 3 992px*/
 @media screen and (max-width: 992px) {
     body{
-        background-color: red;
+        
     }
     .form-image{
         display: none;
@@ -104,7 +104,7 @@
     }
 }
 /** Midia mobile 5 1360px*/
-@media screen and (max-width: 1360px &&) {
+@media screen and (max-width: 1360px) {
     .input-box input{
         width: 10px !important;
         background-color: rebeccapurple;
@@ -132,6 +132,83 @@
 @media screen and (max-width: 1920px) {
     .input-group .input-box input{
         width: 25em !important;
+        margin-bottom: .0em;
+        font-size: .9em;
+        padding: .9em .9em;
+    }
+    .gender-inputs{
+        display: flex;
+        height: 8em;
+        margin: auto;
+        justify-content: center;
+        width: 80%;
+    }
+    .continue-button{
+        width: 98%;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+/* 2280 Pronto*/
+@media screen and (max-width: 2280px) {
+    .form-image{
+        width: 75%;
+    }
+    .container{
+        width: 80%;
+    }
+    .form{
+        width: 80%;
+    }
+    .form form{
+        width: 100%;
+        
+    }
+    .input-group{
+        width: 100%;
+    }
+    .input-group .input-box input{
+        width: 10%;
+        margin-bottom: .0em;
+        font-size: .9em;
+        padding: .9em .9em;
+    }
+    .gender-inputs{
+        display: flex;
+        height: 8em;
+        margin: auto;
+        justify-content: center;
+        width: 80%;
+    }
+    .continue-button{
+        width: 98%;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+/* 2450 Pronto*/
+@media screen and (max-width: 2450px) {
+    .form-image{
+        width: 75%;
+    }
+    .container{
+        width: 80%;
+    }
+    .form{
+        width: 80%;
+    }
+    .form form{
+        width: 100%;
+    }
+    .input-group{
+        width: 100%;
+    }
+    .input-group .input-box input{
+        width: 31em !important;
         margin-bottom: .0em;
         font-size: .9em;
         padding: .9em .9em;
